@@ -24,4 +24,9 @@ public class romantest {
         assertEquals(400,new roman().romanToInt("CD"));
         assertEquals(900,new roman().romanToInt("CM"));
     }
+        @Test
+    public void manyLettersInOrder() {
+        assertEquals(6, new roman().romanToInt("VI"));
+        assertEquals(15, new roman().romanToInt("XV"));
+    }
 }
